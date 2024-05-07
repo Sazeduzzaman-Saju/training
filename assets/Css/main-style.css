@@ -1,0 +1,637 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter:wght@400&family=Bebas+Neue&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap");
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Root styles */
+:root {
+  --white-color: #ffff; /* Example primary color */
+  --primary-color: #18a3af; /* Example primary color */
+  --secondary-color: #b1d139; /* Example secondary color */
+  --extra-color: #28a745; /* Example extra color */
+  --font-one-font: "Hind Siliguri", sans-serif;
+  --font-two-font: "Inter", sans-serif;
+  --font-three-font: "Bebas Neue", sans-serif;
+  --font-four-font: "Dancing Script", cursive;
+  --font-two-font-weight: 400;
+  --font-size-base: 16px; /* Example base font size */
+}
+
+/* Now you can use the font-family in your CSS rules */
+body {
+  font-family: var(--font-two-font) !important;
+  font-size: var(--font-size-base);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 0px solid slategrey;
+}
+
+/* Default styles for top header */
+.top-header {
+  font-family: var(--font-two-font);
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Default styles for navbar links */
+
+/* Additional styles using secondary color */
+.primary-text-color {
+  color: var(--primary-color);
+}
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+/* Additional styles using extra color */
+.extra-text {
+  color: var(--extra-color);
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* ==========================Main Style Start============================= */
+/* ==========================Header Style Start=========================== */
+.navbar-nav .nav-item .nav-link {
+  color: var(--white-color);
+}
+
+.category-btn-header {
+  border: 0;
+  background-color: var(--white-color);
+  padding: 10px 8px;
+  border-radius: 100%;
+  text-align: center;
+}
+.category-btn-header::after {
+  display: none;
+}
+.dropdown-toggle {
+  font-family: var(--font-two-font);
+  display: flex;
+  align-items: center;
+}
+.dropdown-toggle::after {
+  content: "\f107"; /* Unicode for the Font Awesome icon you want to use */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px; /* Adjust spacing if needed */
+  border: 0;
+}
+.navbar-toggler {
+  background-color: none;
+  color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 35px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Custom styles */
+.navbar-toggler {
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.navbar-toggler:hover {
+  transform: rotate(180deg); /* Rotate the button on hover */
+}
+.navbar-toggler-close {
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.navbar-toggler-close:hover {
+  transform: rotate(180deg); /* Rotate the button on hover */
+}
+.navbar-toggler-close:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+.social-top {
+  background-color: white;
+  text-align: center;
+  padding: 7px 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.nav-tabs .cources-category-top.show .cources-category-top-link,
+.nav-tabs .cources-category-top-link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0;
+  width: 100%;
+  border: 0;
+  text-align: start;
+}
+.nav-tabs .cources-category-top.show .cources-category-top-link,
+.nav-tabs .cources-category-top-link.active {
+  background-color: var(--extra-color);
+  color: var(--white-color);
+  border-radius: 0;
+  width: 100%;
+  border: 0;
+  text-align: start;
+}
+.courses-tabs-header {
+  background-color: #fdfbfb !important;
+}
+.header-courses {
+  background-color: #eee;
+}
+/* ==========================Banner Style Start============================= */
+.slider .slick-slide {
+  border: 0;
+  z-index: 1;
+  height: 500px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+}
+
+.slider .slick-slide:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slider .slick-slide h1 {
+  font-size: 80px;
+  font-weight: 700;
+  width: 50%;
+}
+.slider-title {
+  font-family: var(--font-four-font);
+  color: var(--primary-color);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slider .slick-slide p {
+  margin: 0 0 15px;
+  font-family: var(--font-two-font);
+}
+
+.slider .slick-slide.text-left:before {
+  background: linear-gradient(
+    to left,
+    rgba(249, 245, 245, 0) 10%,
+    rgb(0, 0, 0)
+  );
+}
+
+.slider .slick-slide.text-right:before {
+  background: linear-gradient(
+    to right,
+    rgba(249, 245, 245, 0) 10%,
+    rgb(0, 0, 0)
+  );
+}
+
+.slick-dots {
+  width: auto;
+  text-align: left;
+  top: calc(50% - 15px);
+}
+
+.slick-dots li {
+  width: 5px;
+  height: 30px;
+  display: block;
+  margin: 0 0 5px;
+  background: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.slick-dots li.slick-active {
+  width: 15px;
+}
+
+.slick-dots li button {
+  display: none;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+/* CSS */
+.primary-btn-one {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: normal;
+  line-height: 0.8;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.primary-btn-one:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.primary-btn-one:hover:after {
+  opacity: 0.5;
+}
+
+.primary-btn-one:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.primary-btn-one:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .primary-btn-one {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
+/* CSS */
+.primary-btn-two {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: 0.0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform, opacity;
+}
+
+.primary-btn-two:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.primary-btn-two:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.primary-btn-two:not(:disabled) {
+  background-color: var(--secondary-color);
+}
+
+.primary-btn-two:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+}
+
+.primary-btn-two:active {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;
+  background: #a46bf5;
+}
+/* ==========================Filter Style Start============================= */
+.filter_section {
+  background-color: #efefef;
+  padding: 30px;
+}
+.form-select {
+  background-color: #18a3af21;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  color: #686868;
+}
+.form-select:focus {
+  box-shadow: none;
+  outline: none;
+  border: 0;
+}
+.form-select option {
+  background-color: white;
+  border: none !important;
+}
+/* ==========================Footer Style Start============================= */
+.footer-area {
+  background-color: #012951;
+}
+.footer-title {
+  font-family: var(--font-two-font);
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+.category-border-btm {
+  border: 1px solid var(--secondary-color);
+  width: 40px;
+}
+.footer-menu li {
+  list-style: circle;
+  color: white;
+}
+/* ==========================Service Style Start============================= */
+.section-title {
+  color: var(--secondary-color);
+}
+.divider {
+  background-color: var(--secondary-color);
+  border-bottom: 4px solid var(--secondary-color);
+  width: 30px;
+  margin: auto;
+}
+.service-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.service-slick-carousel .slick-slide {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.service-card {
+  height: 350px;
+  max-height: 100%;
+}
+.service-box-card {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity */
+  z-index: 1;
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
+
+.card-body {
+  position: relative; /* Ensure the card body stays above the overlay */
+  z-index: 2;
+}
+
+.service-card a {
+  color: #ffffff; /* Ensure links are visible on the overlay */
+}
+
+.service-card a:hover {
+  color: #ffffff; /* Adjust link color on hover if needed */
+}
+.bio-area h2 {
+  font-family: var(--font-four-font);
+  font-size: 50px;
+  color: var(--primary-color);
+}
+.bio-area p {
+  font-size: 15px;
+}
+.service-one {
+  background-color: #0956c0;
+}
+.service-two {
+  background-color: #1d7abe;
+}
+.service-three {
+  background-color: #2e9db9;
+}
+.service-four {
+  background-color: #3fc1b5;
+}
+.service-card p {
+  font-size: 15px;
+}
+.learn-more-btn {
+  font-family: var(--font-four-font);
+}
+.diffrent-icons {
+  background-color: var(--secondary-color);
+  width: 50px;
+  height: 50px;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 100%;
+  margin: auto;
+}
+.service-icons {
+  text-align: center;
+  padding: 18px;
+}
+.explore-service {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 0.5s;
+  font-size: 16px;
+  font-family: var(--font-two-font);
+}
+.explore-service:hover {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 16px;
+  font-family: var(--font-two-font);
+}
+/* ==========================Some Cources Style Start============================= */
+.cource-badge {
+  background-color: #eaecf0;
+  color: black;
+  font-size: 11px;
+  padding: 5px 8px;
+}
+.bistatiro-btn {
+  font-size: 13px;
+}
+.course-info-text {
+  font-size: 11px;
+}
+.courses-cat-slide {
+  border: 1px solid #eee;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.owl-item .item {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.owl-item.active.current .item {
+  background-color: var(
+    --secondary-color
+  ); /* For example, adding a red border */
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.owl-item.active.current .item p {
+  color: white;
+}
+.partners-logo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal-bg {
+  margin: auto;
+  padding: 8px;
+  text-align: center;
+  background-color: white;
+  width: 40px;
+  border-radius: 100%;
+  height: 40px;
+}
+/* ==========================Others Page Banner Style Start============================= */
+.showcase {
+  width: 100%;
+  height: 330px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.showcase img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover; /* Make the image cover the entire area */
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.showcase .overlay {
+  width: 100%;
+  height: 330px;
+  background-color: rgba(0, 35, 82, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.showcase h2 {
+  margin-top: 100px;
+  font-size: 3em;
+}
+
+.showcase p {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+.cources-link {
+  /* background-color: var(--primary-color); */
+  border-radius: 0 !important;
+  color: black;
+  text-align: start;
+  border-bottom: 1px dashed black !important;
+  font-size: 15px;
+  padding-left: 15px;
+}
+.nav-tabs .nav-item.show .cources-link,
+.nav-tabs .cources-link.active {
+  /* background-color: var(--secondary-color); */
+  border-bottom: 1px dashed var(--primary-color) !important;
+  border-radius: 0 !important;
+  color: var(--primary-color);
+  text-align: start;
+}
+.sidebar-area-cources{
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #eee;
+}
+/* ==========================Main Style Start============================= */
