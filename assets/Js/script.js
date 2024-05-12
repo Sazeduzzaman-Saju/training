@@ -99,3 +99,15 @@ $(document).ready(function(){
     slidesToScroll: 1 // Number of slides to scroll at a time
   });
 });
+$(document).ready(function(){
+  $('.slider-project').slick({
+    autoplay: true, // Enable auto slide
+    autoplaySpeed: 3000, // Set auto slide speed in milliseconds (optional)
+    dots: false, // Display dots navigation
+    arrows: true, // Display arrows navigation
+    infinite: true, // Enable infinite loop
+    speed: 500, // Animation speed in milliseconds
+    slidesToShow: 3, // Number of slides to show at a time
+    slidesToScroll: 1 // Number of slides to scroll at a time
+  });
+});

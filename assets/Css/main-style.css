@@ -140,7 +140,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none;
 }
 .social-top {
-  background-color: white;
+  background-color: var(--white-color);
   text-align: center;
   padding: 7px 5px;
   width: 30px;
@@ -409,7 +409,7 @@ body::-webkit-scrollbar-thumb {
   border: 0;
 }
 .form-select option {
-  background-color: white;
+  background-color: var(--white-color);
   border: none !important;
 }
 /* ==========================Footer Style Start============================= */
@@ -419,15 +419,15 @@ body::-webkit-scrollbar-thumb {
 .footer-title {
   font-family: var(--font-two-font);
   margin-bottom: 0;
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 .category-border-btm {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--white-color);
   width: 40px;
 }
 .footer-menu li {
   list-style: circle;
-  color: white;
+  color: var(--white-color);
 }
 /* ==========================Service Style Start============================= */
 .section-title {
@@ -579,7 +579,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   padding: 8px;
   text-align: center;
-  background-color: white;
+  background-color: var(--white-color);
   width: 40px;
   border-radius: 100%;
   height: 40px;
@@ -587,9 +587,9 @@ body::-webkit-scrollbar-thumb {
 /* ==========================Others Page Banner Style Start============================= */
 .showcase {
   width: 100%;
-  height: 330px;
+  height: 400px;
   position: relative;
-  color: white;
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -605,7 +605,7 @@ body::-webkit-scrollbar-thumb {
 
 .showcase .overlay {
   width: 100%;
-  height: 330px;
+  height: 400px;
   background-color: rgba(0, 35, 82, 0.7);
   position: absolute;
   top: 0;
@@ -614,7 +614,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .showcase h2 {
-  margin-top: 100px;
+  margin-top: 170px;
   font-size: 3em;
 }
 
@@ -630,19 +630,353 @@ body::-webkit-scrollbar-thumb {
   text-align: start;
   border-bottom: 1px dashed black !important;
   font-size: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .nav-tabs .nav-item.show .cources-link,
 .nav-tabs .cources-link.active {
   /* background-color: var(--secondary-color); */
   border-bottom: 1px dashed var(--primary-color) !important;
   border-radius: 0 !important;
-  color: var(--primary-color);
+  color: var(--white-color);
   text-align: start;
+  background-color: var(--primary-color);
 }
 .sidebar-area-cources {
   padding-left: 0;
   padding-right: 0;
   background-color: #eee;
+}
+/* ==========================Registration Style Start============================= */
+.showcase-courses {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.showcase-courses img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  /* Make the image cover the entire area */
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.showcase-courses .overlay-courses {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 35, 82, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.showcase-courses h2 {
+  margin-top: 100px;
+  font-size: 3em;
+}
+
+.showcase-courses p {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+.page_title {
+  font-size: 50px;
+  text-align: center;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.form-desc {
+  font-size: 16px;
+}
+
+.form-area {
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #686868;
+}
+
+.form-color {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #111e30 !important;
+  padding-bottom: 13px !important;
+  border-radius: 5px;
+  border: 1px solid #ffffff33;
+  color: var(--white-color);
+}
+
+.form-color:focus {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #111e30 !important;
+  padding-bottom: 13px !important;
+  border-radius: 5px;
+  color: var(--white-color);
+  border: 1px solid #ffffff33;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.input-field-gap {
+  margin-bottom: 14px;
+}
+
+.form-select:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.form-side-area {
+  border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.sidebar-content {
+  background-color: rgb(217 217 217 / 70%);
+  width: 464px;
+  height: 104px;
+  position: relative;
+  margin-top: -130px;
+  padding: 18px 15px 5px;
+  border-radius: 11px;
+}
+
+.sidebar-areas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.join_offline {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 30px;
+  color: white;
+  margin-bottom: 20px;
+  background: url(https://www.creativeitinstitute.com/assets/images/course-landing/pg-wait-bg.png)
+    no-repeat center center;
+  background-size: cover;
+  transition: opacity 0.5s ease; /* Apply transition to opacity */
+}
+
+.join_offline:hover {
+  background-image: none;
+  color: black;
+  border: 1px solid red;
+}
+
+.join_offline:hover::before {
+  opacity: 0; /* Make the background image transparent on hover */
+  transition: opacity 0.5s ease; /* Apply transition to opacity */
+}
+
+.join_offline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://www.creativeitinstitute.com/assets/images/course-landing/pg-wait-bg.png)
+    no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  opacity: 1; /* Initially set opacity to fully visible */
+  transition: opacity 0.5s ease; /* Apply transition to opacity */
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#bottomSection {
+  display: block; /* Ensure the section is visible by default */
+}
+
+.hide {
+  display: none; /* Hide the section when the hide class is applied */
+}
+/* Plus icon */
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+}
+.accordion-header {
+  border-radius: 0;
+  margin-bottom: 8px;
+}
+.accordion-button.collapsed::after {
+  content: "\f067"; /* Unicode character for plus icon */
+  font-family: "Font Awesome 5 Free"; /* Font family for Font Awesome icons */
+  font-weight: 900; /* Weight of the icon */
+  float: right; /* Align icon to the right */
+  background-image: none; /* Remove background image */
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  border-radius: 0 !important;
+  color: var(--white-color);
+}
+/* Minus icon when accordion item is expanded */
+.accordion-button:not(.collapsed)::after {
+  content: "\f068"; /* Unicode character for minus icon */
+  font-family: "Font Awesome 5 Free"; /* Font family for Font Awesome icons */
+  font-weight: 900; /* Weight of the icon */
+  float: right; /* Align icon to the right */
+  background-image: none; /* Remove background image */
+  transform: var(
+    --bs-accordion-btn-icon-transform
+  ); /* Use Bootstrap's CSS variable for transform */
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  /* background: var(--extra-color); */
+  border-radius: 0;
+}
+.bg-warning-light{
+  background-color: rgb(255 193 7 / 15%);
+  border: 1px dashed rgba(255, 193, 7, 0.593);
+}
+.why-choses{
+  background-color: rgb(255 193 7 / 15%);
+  border: 1px dashed rgba(255, 193, 7, 0.593);
+  font-size: 12px;
+  height: 70px;
+}
+@media (max-width: 768px) {
+  .page_title {
+    font-size: 40px;
+  }
+
+  .form-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .showcase-courses h2 {
+    margin-top: 45px;
+    font-size: 2.7em;
+  }
+}
+/* ==========================Project Slider Style Start============================= */
+.project-box{
+  background-color: #eee;
+}
+
+.box{
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.box:before{
+  content: '';
+  background: linear-gradient(to right,#862c46,#e1705d);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transform: skew(-45deg) scaleX(0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover:before{ 
+  transform: skew(-45deg) scaleX(1); 
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.box img{
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+.box:hover img{
+  transform: scale(1.2);
+  filter: grayscale(0.7) blur(2px);
+}
+.box .box-content{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.box:hover .box-content{
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  transition-delay: 0.2s;
+}
+.box .title{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+  margin: 0 0 7px;
+}
+.box .post{
+  font-size: 16px;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+  display: block;
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.box .icon li{
+  margin: 0 4px;
+  display: inline-block;
+}
+.box .icon li a{
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid #fff;
+  border-radius: 0 0 50% 50%;
+  display: block;
+  transition: all 0.3s;
+}
+.box .icon li a:hover{
+  background: #862c46;
+  box-shadow: 0 0 10px #fff;
+}
+@media only screen and (max-width:990px){
+  .box{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:479px){
+  .box .title{ font-size: 20px; }
 }
 /* ==========================Main Style Start============================= */
