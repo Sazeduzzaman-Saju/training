@@ -63,20 +63,19 @@ $(".service-slick-carousel").slick({
       breakpoint: 768, // Adjust the breakpoint as needed
       settings: {
         slidesToShow: 2,
-      }
+      },
     },
     {
       breakpoint: 480, // Adjust the breakpoint as needed
       settings: {
         slidesToShow: 1,
-      }
-    }
-  ]
+      },
+    },
+  ],
 });
 
-
-$(document).ready(function(){
-  $('.slider-testimornial').slick({
+$(document).ready(function () {
+  $(".slider-testimornial").slick({
     autoplay: true, // Enable auto slide
     autoplaySpeed: 3000, // Set auto slide speed in milliseconds (optional)
     dots: false, // Display dots navigation
@@ -84,11 +83,25 @@ $(document).ready(function(){
     infinite: true, // Enable infinite loop
     speed: 500, // Animation speed in milliseconds
     slidesToShow: 4, // Number of slides to show at a time
-    slidesToScroll: 1 // Number of slides to scroll at a time
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    responsive: [
+      {
+        breakpoint: 768, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
-$(document).ready(function(){
-  $('.slider-pertners').slick({
+$(document).ready(function () {
+  $(".slider-pertners").slick({
     autoplay: true, // Enable auto slide
     autoplaySpeed: 3000, // Set auto slide speed in milliseconds (optional)
     dots: false, // Display dots navigation
@@ -96,11 +109,25 @@ $(document).ready(function(){
     infinite: true, // Enable infinite loop
     speed: 500, // Animation speed in milliseconds
     slidesToShow: 8, // Number of slides to show at a time
-    slidesToScroll: 1 // Number of slides to scroll at a time
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    responsive: [
+      {
+        breakpoint: 768, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
-$(document).ready(function(){
-  $('.slider-project').slick({
+$(document).ready(function () {
+  $(".slider-project").slick({
     autoplay: true, // Enable auto slide
     autoplaySpeed: 3000, // Set auto slide speed in milliseconds (optional)
     dots: false, // Display dots navigation
@@ -108,6 +135,19 @@ $(document).ready(function(){
     infinite: true, // Enable infinite loop
     speed: 500, // Animation speed in milliseconds
     slidesToShow: 3, // Number of slides to show at a time
-    slidesToScroll: 1 // Number of slides to scroll at a time
+    slidesToScroll: 1, // Number of slides to scroll at a time
+  });
+});
+$(document).ready(function () {
+  $(".slider-related-courses").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    gap: 10,
   });
 });
