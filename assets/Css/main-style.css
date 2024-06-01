@@ -70,6 +70,7 @@ body::-webkit-scrollbar-thumb {
 /* ==========================Header Style Start=========================== */
 .navbar-nav .nav-item .nav-link {
   color: black;
+  font-weight: 500;
 }
 
 .category-btn-header {
@@ -155,6 +156,10 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   border: 0;
   text-align: start;
+  border-bottom: 1px solid #eee;
+}
+.cources-category-top {
+  border-bottom: 1px solid #eee !important;
 }
 .nav-tabs .cources-category-top.show .cources-category-top-link,
 .nav-tabs .cources-category-top-link.active {
@@ -280,12 +285,12 @@ body::-webkit-scrollbar-thumb {
     sans-serif;
   font-size: 15px;
   font-weight: 500;
-  height: 45px;
+  height: auto;
   letter-spacing: normal;
   line-height: 0.8;
   outline: none;
   overflow: hidden;
-  padding: 18px 15px !important;
+  padding: 10px !important;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -394,6 +399,7 @@ body::-webkit-scrollbar-thumb {
 .primary-btn-two:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,
     rgba(0, 0, 0, 0.12) 0 1px 10px 0;
+  color: white;
 }
 
 .primary-btn-two:disabled {
@@ -442,7 +448,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* ==========================Footer Style Start============================= */
 .footer-area {
-  background-color: #012951;
+  background-color: #00193d;
 }
 .footer-title {
   font-family: var(--font-two-font);
@@ -513,9 +519,16 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff; /* Adjust link color on hover if needed */
 }
 .bio-area h2 {
-  font-family: var(--font-four-font);
-  font-size: 50px;
+  font-family: var(--font-four-three);
+  font-size: 37px;
   color: var(--primary-color);
+}
+.course_title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.owl-item.active.current .item p {
+  color: var(--white-color);
 }
 .bio-area p {
   font-size: 15px;
@@ -536,7 +549,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px;
 }
 .learn-more-btn {
-  font-family: var(--font-four-font);
+  font-size: 12px;
 }
 .diffrent-icons {
   background-color: var(--secondary-color);
@@ -552,8 +565,8 @@ body::-webkit-scrollbar-thumb {
   padding: 18px;
 }
 .explore-service {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; */
   transition: 0.5s;
   font-size: 16px;
   font-family: var(--font-two-font);
@@ -579,18 +592,17 @@ body::-webkit-scrollbar-thumb {
   color: black;
 }
 .courses-cat-slide {
-  border: 1px solid #eee;
   background-color: transparent;
-  border-radius: 5px;
 }
 
 .owl-item .item {
   margin-right: 10px;
   border-radius: 5px;
+  margin-left: 8px;
 }
 .owl-item.active.current .item {
   background-color: var(--secondary-color);
-  margin-right: 10px;
+  margin-right: 8px;
   border-radius: 5px;
   color: white !important;
 }
@@ -611,6 +623,29 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
   border-radius: 100%;
   height: 40px;
+}
+.shape {
+  border: 0;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* background: linear-gradient(90deg, #0069bf 0%, #38b6ff 100%) !important; */
+}
+.shape .card-header {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 25px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background: linear-gradient(90deg, #001430 0%, #0a1d5b 100%) !important;
+}
+.shape .card-body {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 25px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%) !important;
 }
 /* ==========================Others Page Banner Style Start============================= */
 .showcase {
@@ -656,7 +691,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0 !important;
   color: black;
   text-align: start;
-  border-bottom: 1px dashed black !important;
+  border-bottom: 1px solid #ffff !important;
   font-size: 15px;
   padding-left: 20px;
 }
@@ -793,13 +828,12 @@ body::-webkit-scrollbar-thumb {
 }
 .join_offline {
   position: relative;
-  border-radius: 25px;
+  border-radius: 10px;
   overflow: hidden;
   padding: 30px;
-  color: white;
+  color: black;
   margin-bottom: 20px;
-  background: url(https://www.creativeitinstitute.com/assets/images/course-landing/pg-wait-bg.png)
-    no-repeat center center;
+  background: url(https://i.ibb.co/tPRnDj3/02.jpg) no-repeat center center;
   background-size: cover;
   transition: opacity 0.5s ease; /* Apply transition to opacity */
 }
@@ -807,7 +841,7 @@ body::-webkit-scrollbar-thumb {
 .join_offline:hover {
   background-image: none;
   color: black;
-  border: 1px solid red;
+  border: 1px solid #001430;
 }
 
 .join_offline:hover::before {
@@ -822,8 +856,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(https://www.creativeitinstitute.com/assets/images/course-landing/pg-wait-bg.png)
-    no-repeat center center;
+  background: url(https://i.ibb.co/tPRnDj3/02.jpg) no-repeat center center;
   background-size: cover;
   z-index: 1;
   opacity: 1; /* Initially set opacity to fully visible */
@@ -835,6 +868,36 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   z-index: 9999;
+}
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-text {
+  margin-top: 20px;
+  color: white;
 }
 
 #bottomSection {
@@ -862,9 +925,9 @@ body::-webkit-scrollbar-thumb {
   background-image: none; /* Remove background image */
 }
 .accordion-button:not(.collapsed) {
-  background-color: var(--primary-color);
+  background-color: #eee;
   border-radius: 0 !important;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 /* Minus icon when accordion item is expanded */
 .accordion-button:not(.collapsed)::after {
@@ -882,14 +945,39 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0;
 }
 .bg-warning-light {
-  background-color: rgb(255 193 7 / 15%);
-  border: 1px dashed rgba(255, 193, 7, 0.593);
+  border: 1px dashed rgb(10 29 91);
+  color: black;
 }
 .why-choses {
-  background-color: rgb(255 193 7 / 15%);
-  border: 1px dashed rgba(255, 193, 7, 0.593);
+  /* background-color: rgb(255 193 7 / 15%); */
+  border: 1px dashed rgb(10 29 91);
   font-size: 12px;
   height: 70px;
+}
+.extra-space{
+  padding-top: 5.5rem !important;
+}
+.border-left-side {
+  border-right: 1px solid #c8c4c4;
+}
+.social-icons-btn {
+  display: flex;
+}
+.icons-footer {
+  width: 30px;
+  height: 30px;
+  font-size: var(--header-font-size);
+  font-weight: 500;
+  text-decoration: none;
+  background: var(--white-color);
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #00193d;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 @media (max-width: 768px) {
   .page_title {
@@ -1143,7 +1231,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 99999;
   transform: translateY(-50%);
   padding: 10px;
-  background-color: rgb(255, 193, 7);
+  background-color: #001430;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -1156,10 +1244,10 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes glow {
   from {
-      box-shadow: 0 0 10px 3px rgb(255, 193, 7);
+    box-shadow: 0 0 10px 3px #001430;
   }
   to {
-      box-shadow: 0 0 20px 6px rgb(255, 193, 7);
+    box-shadow: 0 0 20px 6px #001430;
   }
 }
 

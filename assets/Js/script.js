@@ -148,6 +148,12 @@ $(document).ready(function () {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    gap: 10,
+    gap: 15,
   });
+});
+
+
+window.addEventListener('load', function () {
+  var loader = document.querySelector('.loader-wrapper');
+  loader.style.display = 'none';
 });

@@ -36,6 +36,12 @@
     <link rel="stylesheet" href="./assets/Css/main-style.css" />
   </head>
   <body>
+    <!-- Loader -->
+    <!-- <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-text">Loading...</div>
+    </div> -->
+
     <section>
       <div class="top-header bg-black p-2">
         <div class="container">
@@ -147,10 +153,11 @@
                 </button>
                 <ul
                   class="dropdown-menu w-100 m-0 rounded-0 p-0 border-0 courses-tabs-header"
+                  style="border-top: 1px solid #001430 !important"
                 >
                   <div class="container">
                     <div class="row gx-0">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3" style="background: #0a1d5b">
                         <ul
                           class="nav nav-tabs flex-column"
                           id="myTab"
@@ -161,7 +168,7 @@
                             role="presentation"
                           >
                             <button
-                              class="nav-link cources-category-top-link active"
+                              class="nav-link cources-category-top-link text-white active"
                               id="home-tab"
                               data-bs-toggle="tab"
                               data-bs-target="#home-tab-pane"
@@ -178,7 +185,7 @@
                             role="presentation"
                           >
                             <button
-                              class="nav-link cources-category-top-link"
+                              class="nav-link cources-category-top-link text-white"
                               id="profile-tab"
                               data-bs-toggle="tab"
                               data-bs-target="#profile-tab-pane"
@@ -195,7 +202,7 @@
                             role="presentation"
                           >
                             <button
-                              class="nav-link cources-category-top-link"
+                              class="nav-link cources-category-top-link text-white"
                               id="contact-tab"
                               data-bs-toggle="tab"
                               data-bs-target="#contact-tab-pane"
@@ -372,15 +379,210 @@
                   >Online Learning</a
                 >
                 <ul
-                  class="dropdown-menu w-100 m-0 rounded-0 p-0"
+                  class="dropdown-menu w-100 m-0 rounded-0 p-0 py-0"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-3" style="background: #0a1d5b">
+                        <ul
+                          class="nav nav-tabs flex-column"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white active"
+                              id="home-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#home-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="home-tab-pane"
+                              aria-selected="true"
+                            >
+                              Data Science
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="profile-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#profile-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="profile-tab-pane"
+                              aria-selected="false"
+                            >
+                              Profile
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#contact-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="contact-tab-pane"
+                              aria-selected="false"
+                            >
+                              Contact
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-9 header-courses">
+                        <div class="tab-content" id="myTabContent">
+                          <div
+                            class="tab-pane fade show active p-3"
+                            id="home-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                            tabindex="0"
+                          >
+                            <h3 class="pb-3 primary-text-color">
+                              Data Science
+                            </h3>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Degrees
+                                </p>
+                                <small class="text-muted"
+                                  >Breakthrough pricing on 100% online degrees
+                                  designed to fit into your life.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Certificate programs
+                                </p>
+                                <small class="text-muted"
+                                  >In 3-9 months, gain the skills to break into
+                                  a new career or take your career to the next
+                                  level.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Get Started
+                                </p>
+                                <ul class="ps-4 ms-0">
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >New Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Beginner Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Data Science Projects</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="profile-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                            tabindex="0"
+                          >
+                            2
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="contact-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                            tabindex="0"
+                          >
+                            3
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item dropdown position-static">
@@ -395,15 +597,210 @@
                   >Training Categories</a
                 >
                 <ul
-                  class="dropdown-menu w-100 m-0 rounded-0 p-0"
+                  class="dropdown-menu w-100 m-0 rounded-0 p-0 py-0"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-3" style="background: #0a1d5b">
+                        <ul
+                          class="nav nav-tabs flex-column"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white active"
+                              id="home-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#home-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="home-tab-pane"
+                              aria-selected="true"
+                            >
+                              Data Science
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="profile-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#profile-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="profile-tab-pane"
+                              aria-selected="false"
+                            >
+                              Profile
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#contact-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="contact-tab-pane"
+                              aria-selected="false"
+                            >
+                              Contact
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-9 header-courses">
+                        <div class="tab-content" id="myTabContent">
+                          <div
+                            class="tab-pane fade show active p-3"
+                            id="home-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                            tabindex="0"
+                          >
+                            <h3 class="pb-3 primary-text-color">
+                              Data Science
+                            </h3>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Degrees
+                                </p>
+                                <small class="text-muted"
+                                  >Breakthrough pricing on 100% online degrees
+                                  designed to fit into your life.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Certificate programs
+                                </p>
+                                <small class="text-muted"
+                                  >In 3-9 months, gain the skills to break into
+                                  a new career or take your career to the next
+                                  level.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Get Started
+                                </p>
+                                <ul class="ps-4 ms-0">
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >New Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Beginner Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Data Science Projects</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="profile-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                            tabindex="0"
+                          >
+                            2
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="contact-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                            tabindex="0"
+                          >
+                            3
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item dropdown position-static">
@@ -418,15 +815,210 @@
                   >Training Vanue</a
                 >
                 <ul
-                  class="dropdown-menu w-100 m-0 rounded-0"
+                  class="dropdown-menu w-100 m-0 rounded-0 py-0"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-3" style="background: #0a1d5b">
+                        <ul
+                          class="nav nav-tabs flex-column"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white active"
+                              id="home-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#home-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="home-tab-pane"
+                              aria-selected="true"
+                            >
+                              Data Science
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="profile-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#profile-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="profile-tab-pane"
+                              aria-selected="false"
+                            >
+                              Profile
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#contact-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="contact-tab-pane"
+                              aria-selected="false"
+                            >
+                              Contact
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-9 header-courses">
+                        <div class="tab-content" id="myTabContent">
+                          <div
+                            class="tab-pane fade show active p-3"
+                            id="home-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                            tabindex="0"
+                          >
+                            <h3 class="pb-3 primary-text-color">
+                              Data Science
+                            </h3>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Degrees
+                                </p>
+                                <small class="text-muted"
+                                  >Breakthrough pricing on 100% online degrees
+                                  designed to fit into your life.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Certificate programs
+                                </p>
+                                <small class="text-muted"
+                                  >In 3-9 months, gain the skills to break into
+                                  a new career or take your career to the next
+                                  level.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Get Started
+                                </p>
+                                <ul class="ps-4 ms-0">
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >New Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Beginner Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Data Science Projects</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="profile-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                            tabindex="0"
+                          >
+                            2
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="contact-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                            tabindex="0"
+                          >
+                            3
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item dropdown position-static">
@@ -441,24 +1033,225 @@
                   >Service</a
                 >
                 <ul
-                  class="dropdown-menu w-100 m-0 rounded-0"
+                  class="dropdown-menu w-100 m-0 rounded-0 py-0"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-3" style="background: #0a1d5b">
+                        <ul
+                          class="nav nav-tabs flex-column"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white active"
+                              id="home-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#home-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="home-tab-pane"
+                              aria-selected="true"
+                            >
+                              Data Science
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="profile-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#profile-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="profile-tab-pane"
+                              aria-selected="false"
+                            >
+                              Profile
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item cources-category-top"
+                            role="presentation"
+                          >
+                            <button
+                              class="nav-link cources-category-top-link text-white"
+                              id="contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#contact-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="contact-tab-pane"
+                              aria-selected="false"
+                            >
+                              Contact
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-9 header-courses">
+                        <div class="tab-content" id="myTabContent">
+                          <div
+                            class="tab-pane fade show active p-3"
+                            id="home-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                            tabindex="0"
+                          >
+                            <h3 class="pb-3 primary-text-color">
+                              Data Science
+                            </h3>
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Degrees
+                                </p>
+                                <small class="text-muted"
+                                  >Breakthrough pricing on 100% online degrees
+                                  designed to fit into your life.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Certificate programs
+                                </p>
+                                <small class="text-muted"
+                                  >In 3-9 months, gain the skills to break into
+                                  a new career or take your career to the next
+                                  level.</small
+                                >
+                                <a href="" class="text-decoration-none">
+                                  <div class="d-flex align-items-center pt-3">
+                                    <div>
+                                      <img
+                                        class="img-fluid"
+                                        width="36px"
+                                        height="36px"
+                                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="ps-2">
+                                      <small class="text-muted"
+                                        >University of Michigan</small
+                                      >
+                                      <p class="mb-0 primary-text-color">
+                                        Master of Applied Data Science
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-lg-4">
+                                <p class="fw-bold border-bottom text-muted">
+                                  Get Started
+                                </p>
+                                <ul class="ps-4 ms-0">
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >New Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Beginner Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Data Science Projects</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href=""
+                                      class="text-decoration-none primary-text-color"
+                                      >Advanced Data Science Courses</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="profile-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                            tabindex="0"
+                          >
+                            2
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="contact-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                            tabindex="0"
+                          >
+                            3
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  href="about-us.html"
+                  class="nav-link active"
+                  aria-current="page"
                   >About Us</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact-us.html"
                   >Contact Us</a
                 >
               </li>
@@ -594,15 +1387,15 @@
       <section
         class="service-bg"
         style="
-          background-image: url(https://t4.ftcdn.net/jpg/03/13/81/83/360_F_313818309_sI2LhUeMYPtLzskyGcfWsHpvHxSjBtlt.jpg);
+          background-image: url(https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-elina-araja-1743227-3377405.jpg&fm=jpg);
         "
       >
         <div class="container">
           <div class="row py-5">
             <div class="text-center px-5">
-              <h3 class="text-white">Our Services</h3>
+              <h3 class="section-title">Our Services</h3>
               <div class="divider"></div>
-              <p class="text-white py-0 px-0 px-lg-5 py-lg-3">
+              <p class="text-muted py-0 px-0 px-lg-5 py-lg-3">
                 We offering comprehensive learning solutions that provide
                 flexibility to opt face-to-face training, online courses.
                 consulting or coaching as an individual or blended solution in
@@ -648,12 +1441,12 @@
                     <div class="card-body service-card">
                       <div class="text-center">
                         <div class="py-3">
-                          <h4 class="text-white">E-Learning Solutions</h4>
+                          <h4 class="text-white">Public Training Courses</h4>
                           <div class="divider"></div>
                         </div>
                         <p class="text-white">
-                          Enjoy online learning in Virtual Instructor-Led
-                          Training (VILT) format.
+                          Short term workshops and training seminars offered at
+                          20+ global locations
                         </p>
                         <div class="text-center">
                           <div class="py-3 learn-more-btn">
@@ -675,12 +1468,14 @@
                     <div class="card-body service-card">
                       <div class="text-center">
                         <div class="py-3">
-                          <h4 class="text-white">E-Learning Solutions</h4>
+                          <h4 class="text-white">
+                            In- House Training Programs
+                          </h4>
                           <div class="divider"></div>
                         </div>
                         <p class="text-white">
-                          Enjoy online learning in Virtual Instructor-Led
-                          Training (VILT) format.
+                          Bespoke and cost-effective training solution for your
+                          precise needs.
                         </p>
                         <div class="text-center">
                           <div class="py-3 learn-more-btn">
@@ -702,12 +1497,15 @@
                     <div class="card-body service-card">
                       <div class="text-center">
                         <div class="py-3">
-                          <h4 class="text-white">E-Learning Solutions</h4>
+                          <h4 class="text-white">
+                            Others <br />
+                            Coaching
+                          </h4>
                           <div class="divider"></div>
                         </div>
                         <p class="text-white">
-                          Enjoy online learning in Virtual Instructor-Led
-                          Training (VILT) format.
+                          Flexible Consulting & Coaching services based on your
+                          unique needs.
                         </p>
                         <div class="text-center">
                           <div class="py-3 learn-more-btn">
@@ -739,7 +1537,10 @@
               </p>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i class="fa-solid fa-lightbulb fs-2 text-white"></i>
                 </div>
@@ -747,7 +1548,10 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i class="fa-solid fa-user-graduate fs-2 text-white"></i>
                 </div>
@@ -755,7 +1559,10 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i class="fa-solid fa-star fs-2 text-white"></i>
                 </div>
@@ -763,7 +1570,10 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i
                     class="fa-solid fa-arrow-right-arrow-left fs-2 text-white"
@@ -773,7 +1583,10 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i class="fa-solid fa-gear fs-2 text-white"></i>
                 </div>
@@ -781,7 +1594,10 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <div class="text-center shadow-sm p-3">
+              <div
+                class="text-center p-3"
+                style="border-right: 1px solid black"
+              >
                 <div class="diffrent-icons">
                   <i class="fa-solid fa-people-group fs-2 text-white"></i>
                 </div>
@@ -794,8 +1610,116 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="text-center px-5">
+            <h3 class="section-title">Our Best Courses</h3>
+            <div class="divider"></div>
+            <p class="py-3 px-5">
+              Checkout key reasons for reputed organisations partner with
+              Promise
+            </p>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div class="row align-items-center p-3">
+                    <div class="col-lg-5">
+                      <img
+                        class="img-fluid"
+                        src="https://img.directindustry.com/buyingguide/di/en/501.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-7">
+                      <div>
+                        <h6 class="" style="color: #001430">
+                          CHOOSING THE RIGHT PRESSURE GAUGE
+                        </h6>
+                        <p style="text-align: justify">
+                          A pressure gauge is an instrument for measuring
+                          pressure. The term pressure indicator may also be
+                          used. In industry, pressure is certainly the [...]
+                        </p>
+                        <button class="primary-btn-one w-100 rounded-0">
+                          Learn More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div class="row align-items-center p-3">
+                    <div class="col-lg-5">
+                      <img
+                        class="img-fluid"
+                        src="https://img.directindustry.com/buyingguide/di/en/501.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-7">
+                      <div>
+                        <h6 class="" style="color: #001430">
+                          CHOOSING THE RIGHT PRESSURE GAUGE
+                        </h6>
+                        <p style="text-align: justify">
+                          A pressure gauge is an instrument for measuring
+                          pressure. The term pressure indicator may also be
+                          used. In industry, pressure is certainly the [...]
+                        </p>
+                        <button class="primary-btn-one w-100 rounded-0">
+                          Learn More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div class="row align-items-center p-3">
+                    <div class="col-lg-5">
+                      <img
+                        class="img-fluid"
+                        src="https://img.directindustry.com/buyingguide/di/en/501.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-7">
+                      <div>
+                        <h6 class="" style="color: #001430">
+                          CHOOSING THE RIGHT PRESSURE GAUGE
+                        </h6>
+                        <p style="text-align: justify">
+                          A pressure gauge is an instrument for measuring
+                          pressure. The term pressure indicator may also be
+                          used. In industry, pressure is certainly the [...]
+                        </p>
+                        <button class="primary-btn-one w-100 rounded-0">
+                          Learn More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Explore SEction -->
-      <section style="background-color: #0185da">
+      <section
+        style="
+          background-image: url(https://t4.ftcdn.net/jpg/04/68/58/21/360_F_468582130_EOx6UIihZrCBKjXG1ePuOIVVBfSvYFGb.jpg);
+        "
+      >
         <div class="container">
           <div class="row py-5">
             <div class="text-center px-5">
@@ -814,7 +1738,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Management, Leadership & Strategy</p>
                       </div>
                       <div class="">
                         <i
@@ -830,7 +1754,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Oil, Gas & Process Engineering</p>
                       </div>
                       <div class="">
                         <i
@@ -846,7 +1770,9 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">
+                          Procurement, Logistics & Supply Chain
+                        </p>
                       </div>
                       <div class="">
                         <i
@@ -862,7 +1788,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Human Resources Management</p>
                       </div>
                       <div class="">
                         <i
@@ -880,7 +1806,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Finance, Accounting & Budgeting</p>
                       </div>
                       <div class="">
                         <i
@@ -896,7 +1822,9 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">
+                          Administration, Office Management & Secretarial
+                        </p>
                       </div>
                       <div class="">
                         <i
@@ -912,7 +1840,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Contract Management</p>
                       </div>
                       <div class="">
                         <i
@@ -928,7 +1856,7 @@
                       class="p-3 bg-white d-flex align-items-center shadow-sm explore-service justify-content-between"
                     >
                       <div>
-                        <p class="mb-0">Management, Leadership</p>
+                        <p class="mb-0">Customer Service Management</p>
                       </div>
                       <div class="">
                         <i
@@ -948,8 +1876,106 @@
       </section>
       <!-- Popular -->
       <section>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card shape">
+                <div class="card-header">
+                  <h4>Industry Courses | That Should Change Your Life !</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <a href="" class="text-decoration-none">
+                        <div class="card rounded-0 border-0 shadow-sm p-3">
+                          <div class="d-flex align-items-center">
+                            <h1 class="mb-0">
+                              <i class="fa-brands fa-draft2digital pe-2"></i>
+                            </h1>
+                            <span class="px-2">|</span>
+                            <div>
+                              <p class="mb-0 fw-bold text-muted">
+                                Career Consulting
+                              </p>
+                              <small class="text-muted pt-3">
+                                Career consulting offers tailored guidance for
+                                career advancement, including job search
+                                strategies, resume building, and goal setting.
+                              </small>
+                            </div>
+                          </div>
+                          <div>
+                            <p class="text-end mb-0">
+                              <a href="" class="text-decoration-none fs-4">+</a>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="" class="text-decoration-none">
+                        <div class="card rounded-0 border-0 shadow-sm p-3">
+                          <div class="d-flex align-items-center">
+                            <h1 class="mb-0">
+                              <i class="fa-brands fa-draft2digital pe-2"></i>
+                            </h1>
+                            <span class="px-2">|</span>
+                            <div>
+                              <p class="mb-0 fw-bold text-muted">
+                                Job Placement
+                              </p>
+                              <small class="text-muted">
+                                Job placement involves matching qualified
+                                candidates with opportunities, facilitating a
+                                smooth transition into the workforce.
+                              </small>
+                            </div>
+                          </div>
+                          <div>
+                            <p class="text-end mb-0">
+                              <a href="" class="text-decoration-none fs-4">+</a>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="" class="text-decoration-none">
+                        <div class="card rounded-0 border-0 shadow-sm p-3">
+                          <div class="d-flex align-items-center">
+                            <h1 class="mb-0">
+                              <i class="fa-brands fa-draft2digital pe-2"></i>
+                            </h1>
+                            <span class="px-2">|</span>
+                            <div>
+                              <p class="mb-0 fw-bold text-muted">
+                                Trendy Professional Courses
+                              </p>
+                              <small class="text-muted">
+                                Trendy professional courses offer cutting-edge
+                                skills and knowledge in high-demand industries,
+                                ensuring participants stay ahead.
+                              </small>
+                            </div>
+                          </div>
+                          <div>
+                            <p class="text-end mb-0">
+                              <a href="" class="text-decoration-none fs-4">+</a>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="container">
-          <div class="row py-5">
+          <div class="row pb-5">
             <div class="text-center px-5">
               <h3 class="section-title">Our Popular Training Seminars</h3>
               <div class="divider"></div>
@@ -975,7 +2001,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -999,8 +2025,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1020,7 +2046,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1044,8 +2070,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1065,7 +2091,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1089,8 +2115,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1110,7 +2136,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1134,192 +2160,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
-                              <i class="fa-solid fa-arrow-right ps-2"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                    <div class="col-lg-3 mb-lg-0 mb-3">
-                      <div class="card border-0 bg-light shadow-sm rounded-2">
-                        <div class="card-header p-0 bg-transparent">
-                          <div>
-                            <img
-                              class="rounded-2"
-                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="p-2 text-center">
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
-                                বাকি</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
-                                বাকি</span
-                              ></small
-                            >
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <h6>
-                            Mastering Social Media Banner Design: The Next Level
-                          </h6>
-                          <div class="pt-3">
-                            <a
-                              href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
-                              <i class="fa-solid fa-arrow-right ps-2"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 mb-lg-0 mb-3">
-                      <div class="card border-0 bg-light shadow-sm rounded-2">
-                        <div class="card-header p-0 bg-transparent">
-                          <div>
-                            <img
-                              class="rounded-2"
-                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="p-2 text-center">
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
-                                বাকি</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
-                                বাকি</span
-                              ></small
-                            >
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <h6>
-                            Mastering Social Media Banner Design: The Next Level
-                          </h6>
-                          <div class="pt-3">
-                            <a
-                              href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
-                              <i class="fa-solid fa-arrow-right ps-2"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 mb-lg-0 mb-3">
-                      <div class="card border-0 bg-light shadow-sm rounded-2">
-                        <div class="card-header p-0 bg-transparent">
-                          <div>
-                            <img
-                              class="rounded-2"
-                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="p-2 text-center">
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
-                                বাকি</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
-                                বাকি</span
-                              ></small
-                            >
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <h6>
-                            Mastering Social Media Banner Design: The Next Level
-                          </h6>
-                          <div class="pt-3">
-                            <a
-                              href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
-                              <i class="fa-solid fa-arrow-right ps-2"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 mb-lg-0 mb-3">
-                      <div class="card border-0 bg-light shadow-sm rounded-2">
-                        <div class="card-header p-0 bg-transparent">
-                          <div>
-                            <img
-                              class="rounded-2"
-                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="p-2 text-center">
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
-                                বাকি</span
-                              ></small
-                            >
-                            <small class="pe-1"
-                              ><span class="cource-badge rounded-2"
-                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
-                                বাকি</span
-                              ></small
-                            >
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <h6>
-                            Mastering Social Media Banner Design: The Next Level
-                          </h6>
-                          <div class="pt-3">
-                            <a
-                              href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1343,7 +2185,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1367,8 +2209,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1388,7 +2230,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1412,8 +2254,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1433,7 +2275,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1457,8 +2299,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1478,7 +2320,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1502,8 +2344,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1527,7 +2369,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1551,8 +2393,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1572,7 +2414,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1596,8 +2438,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1617,7 +2459,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1641,8 +2483,8 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1662,7 +2504,7 @@
                           <div class="p-2 text-center">
                             <small class="pe-1"
                               ><span class="cource-badge rounded-2"
-                                >ব্যাচ ২</span
+                                >Batch 2</span
                               ></small
                             >
                             <small class="pe-1"
@@ -1686,8 +2528,192 @@
                           <div class="pt-3">
                             <a
                               href=""
-                              class="btn btn-light bg-white border w-100 bistatiro-btn"
-                              >বিস্তারিত দেখি
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
+                              <i class="fa-solid fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-lg-3 mb-lg-0 mb-3">
+                      <div class="card border-0 bg-light shadow-sm rounded-2">
+                        <div class="card-header p-0 bg-transparent">
+                          <div>
+                            <img
+                              class="rounded-2"
+                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-2 text-center">
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                >Batch 2</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
+                                বাকি</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
+                                বাকি</span
+                              ></small
+                            >
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h6>
+                            Mastering Social Media Banner Design: The Next Level
+                          </h6>
+                          <div class="pt-3">
+                            <a
+                              href=""
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
+                              <i class="fa-solid fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 mb-lg-0 mb-3">
+                      <div class="card border-0 bg-light shadow-sm rounded-2">
+                        <div class="card-header p-0 bg-transparent">
+                          <div>
+                            <img
+                              class="rounded-2"
+                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-2 text-center">
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                >Batch 2</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
+                                বাকি</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
+                                বাকি</span
+                              ></small
+                            >
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h6>
+                            Mastering Social Media Banner Design: The Next Level
+                          </h6>
+                          <div class="pt-3">
+                            <a
+                              href=""
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
+                              <i class="fa-solid fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 mb-lg-0 mb-3">
+                      <div class="card border-0 bg-light shadow-sm rounded-2">
+                        <div class="card-header p-0 bg-transparent">
+                          <div>
+                            <img
+                              class="rounded-2"
+                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-2 text-center">
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                >Batch 2</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
+                                বাকি</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
+                                বাকি</span
+                              ></small
+                            >
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h6>
+                            Mastering Social Media Banner Design: The Next Level
+                          </h6>
+                          <div class="pt-3">
+                            <a
+                              href=""
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
+                              <i class="fa-solid fa-arrow-right ps-2"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 mb-lg-0 mb-3">
+                      <div class="card border-0 bg-light shadow-sm rounded-2">
+                        <div class="card-header p-0 bg-transparent">
+                          <div>
+                            <img
+                              class="rounded-2"
+                              src="https://cdn.ostad.app/course/cover/2023-12-04T11-05-21.903Z-Flutter.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-2 text-center">
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                >Batch 2</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-solid fa-users pe-2"></i>৭০ সিট
+                                বাকি</span
+                              ></small
+                            >
+                            <small class="pe-1"
+                              ><span class="cource-badge rounded-2"
+                                ><i class="fa-regular fa-clock pe-2"></i>২৭ দিন
+                                বাকি</span
+                              ></small
+                            >
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h6>
+                            Mastering Social Media Banner Design: The Next Level
+                          </h6>
+                          <div class="pt-3">
+                            <a
+                              href=""
+                              class="primary-btn-one rounded-0 border w-100"
+                              >See Details
                               <i class="fa-solid fa-arrow-right ps-2"></i
                             ></a>
                           </div>
@@ -1698,12 +2724,14 @@
                 </div>
               </div>
 
-              <div id="sync2" class="owl-carousel owl-theme mt-2">
+              <div id="sync2" class="owl-carousel owl-theme mt-3">
                 <div class="item">
                   <div>
                     <div class="card courses-cat-slide">
-                      <div class="card-body border-0 shadow-sm rounded-2 p-2">
-                        <p class="mb-0">Design Business & Marketing</p>
+                      <div class="card-body border-0 shadow-sm p-2">
+                        <p class="mb-0 course_title">
+                          Design Business & Marketing
+                        </p>
                         <div>
                           <small class="">• ১২ কোর্স • ৩ ওয়ার্কশপ</small>
                         </div>
@@ -1714,8 +2742,8 @@
                 <div class="item">
                   <div>
                     <div class="card courses-cat-slide">
-                      <div class="card-body border-0 shadow-sm rounded-2 p-2">
-                        <p class="mb-0">Data Engineering</p>
+                      <div class="card-body border-0 shadow-sm p-2">
+                        <p class="mb-0 course_title">Data Engineering</p>
                         <div>
                           <small class="">• ১২ কোর্স • ৩ ওয়ার্কশপ</small>
                         </div>
@@ -1726,8 +2754,8 @@
                 <div class="item">
                   <div>
                     <div class="card courses-cat-slide">
-                      <div class="card-body border-0 shadow-sm rounded-2 p-2">
-                        <p class="mb-0">Creatives</p>
+                      <div class="card-body border-0 shadow-sm p-2">
+                        <p class="mb-0 course_title">Creatives</p>
                         <div>
                           <small class="">• ১২ কোর্স • ৩ ওয়ার্কশপ</small>
                         </div>
@@ -1738,8 +2766,8 @@
                 <div class="item">
                   <div>
                     <div class="card courses-cat-slide">
-                      <div class="card-body border-0 shadow-sm rounded-2 p-2">
-                        <p class="mb-0">Blockchain Development</p>
+                      <div class="card-body border-0 shadow-sm p-2">
+                        <p class="mb-0 course_title">Blockchain Development</p>
                         <div>
                           <small class="">• ১২ কোর্স • ৩ ওয়ার্কশপ</small>
                         </div>
@@ -1752,8 +2780,25 @@
           </div>
         </div>
       </section>
+      <section style="background-color: var(--primary-color)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 py-5">
+              <h2 class="text-center text-white special-text">
+                Would you like to connect with <br />
+                a skills development expert?
+              </h2>
+              <div class="text-center py-3">
+                <a href="" class="btn primary-btn-two text-center"
+                  >Start A Conversation</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Testimonial -->
-      <section
+      <!-- <section
         class="testimonial-area"
         style="
           background-image: url(https://go.trader.ca/wp-content/uploads/2018/06/testimonial-background-graphic.jpg);
@@ -1903,11 +2948,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Pertners Section -->
       <section>
         <div class="container">
-          <div class="row py-5">
+          <div class="row pb-5">
             <div class="text-center px-5">
               <h3 class="section-title">Our Pertners</h3>
               <div class="divider"></div>
@@ -1977,7 +3022,7 @@
                     >
                       <img
                         class="img-fluid"
-                        src="https://www.techfocusltd.com/storage/webSetting/systemLogoWhite/Logo_UUd9KrWL_m0Fd5fYi.png"
+                        src="./assets/img/logo.png"
                         alt="techfocusltd"
                       />
                     </div>
@@ -2006,7 +3051,7 @@
         <div class="container">
           <div class="row pb-5">
             <div class="text-center px-5">
-              <h3 class="section-title">ক্যারিয়ার গোল সেট করুন</h3>
+              <h3 class="section-title">Set Career Goals</h3>
               <div class="divider"></div>
               <p class="text-muted py-3 px-5">
                 Checkout key reasons for reputed organisations partner with
@@ -2089,26 +3134,9 @@
         </div>
       </section>
       <!-- Blogs Area -->
-      <section style="background-color: var(--primary-color)">
+      <!-- <section>
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 py-5">
-              <h2 class="text-center text-white special-text">
-                Would you like to connect with <br />
-                a skills development expert?
-              </h2>
-              <div class="text-center py-3">
-                <a href="" class="btn primary-btn-two text-center"
-                  >Start A Conversation</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="row py-5">
+<div class="row pb-5">
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-lg-6 mb-4">
@@ -2199,7 +3227,6 @@
             </div>
             <div class="col-lg-6">
               <div>
-                <!-- src="https://www.youtube.com/embed/7Z8TkGAgar4?si=qMMCSWgK0lo6fpS9&autoplay=1" -->
                 <iframe
                   width="100%"
                   height="265"
@@ -2214,234 +3241,133 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
       <section class="footer-area">
         <div class="container">
-          <div class="row py-5">
-            <div class="col-lg-3">
-              <div class="footer-logo">
-                <img
-                  class="img-fluid"
-                  src="https://www.promisetrainingglobal.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2017/12/logo-t1.png.webp"
-                  alt=""
-                />
-              </div>
-              <div class="pt-3 footer-logo-content">
-                <small class="text-white mb-0">
-                  17, The Iridium Building, <br />
-                  AI Barsha, Umm Suqeim St, Dubai, UAE
-                </small>
-                <small class="text-white mb-0">
-                  Tel: +971-4-3400506 / +971-54-4590666
-                </small>
-                <small class="text-white mb-0">
-                  Email: info@promisetrainingglobal.com
-                </small>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <p class="fs-3 footer-title">Courses By Category</p>
-              <div class="category-border-btm"></div>
+          <div class="row text-white align-items-center">
+            <div
+              class="col-lg-3 p-4 text-lg-start text-center border-left-side"
+            >
               <div>
-                <ul class="pt-5 ps-3 footer-menu">
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Administration, Office Management & Secretarial</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Management, Leadership</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Finance, Accounting & Budgeting</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Contract Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Human Resources Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Administration, Office Management & Secretarial</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Management, Leadership</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Finance, Accounting & Budgeting</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Contract Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Human Resources Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Contract Management</a
-                    >
-                  </li>
-                </ul>
+                <a
+                  class="text-decoration-none text-white"
+                  href="https://www.techfocusltd.com/buying/guide"
+                  >HOW TO BUY PRODUCTS</a
+                >
               </div>
             </div>
-            <div class="col-lg-2">
-              <p class="fs-3 footer-title">By Vanue</p>
-              <div class="category-border-btm"></div>
+            <div class="col-lg-2 p-4 text-center border-left-side">
               <div>
-                <ul class="pt-5 ps-3 footer-menu mobile-d-none">
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Bangaldesh</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Canada</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white"> USA</a>
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Portugal</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Australia</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Bangaldesh</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Canada</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white"> USA</a>
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Portugal</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Australia</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="text-decoration-none text-white">
-                      Bangaldesh</a
-                    >
-                  </li>
-                </ul>
+                <a
+                  class="text-decoration-none text-white"
+                  href="https://www.techfocusltd.com/exhibit"
+                  >EXHIBIT WITH US
+                </a>
               </div>
             </div>
-            <div class="col-lg-3">
-              <p class="fs-3 footer-title">Newsletter</p>
-              <div class="category-border-btm"></div>
-              <div class="pt-5">
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control-sm bg-light rounded-0 border-0 w-100"
-                    id="exampleFormControlInput1"
-                    placeholder="Enter Your Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control-sm bg-light rounded-0 border-0 w-100"
-                    id="exampleFormControlInput1"
-                    placeholder="Enter Your Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control-sm bg-light rounded-0 border-0 w-100"
-                    id="exampleFormControlInput1"
-                    placeholder="Enter Your Company Name"
-                  />
-                </div>
-                <div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                      checked
-                    />
-                    <label
-                      class="form-check-label text-white"
-                      for="flexCheckChecked"
-                    >
-                      Yes, I would like to receive emails from Training.
-                    </label>
-                  </div>
-                </div>
-                <div>
-                  <button class="primary-btn-one w-100 my-3">Submit</button>
-                  <p class="mb-0 text-white text-center text-lg-start">
-                    By submitting this form, you are consenting to receive
-                    marketing emails.
-                  </p>
-                </div>
+            <div class="col-lg-2 p-4 text-center border-left-side">
+              <div>
+                <a
+                  class="text-decoration-none text-white"
+                  href="https://www.techfocusltd.com/faq"
+                  >FAQ
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 p-4 d-flex justify-content-between align-items-center social-area"
+            >
+              <ul class="" style="list-style-type: none">
+                <li class="pt-2">
+                  <a
+                    class="text-white text-decoration-none"
+                    href="https://www.techfocusltd.com/brand/list"
+                    >Brand list</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="text-white text-decoration-none"
+                    href="https://www.techfocusltd.com/manufacturer/account"
+                  >
+                    Manufacturer account</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="text-white text-decoration-none"
+                    href="https://www.techfocusltd.com/services"
+                  >
+                    Our Service</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="text-white text-decoration-none"
+                    href="https://www.techfocusltd.com/subscription"
+                  >
+                    Subscriptions</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="text-white text-decoration-none"
+                    href="about-us.html"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+              <div class="social-icons-btn">
+                <a class="icons-footer twitter" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="icons-footer facebook" href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="icons-footer instagram" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="icons-footer linkedin" href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section style="background-color: #012447">
+      <section style="background-color: #001430">
         <div class="container">
-          <div class="row py-2">
+          <div class="row pb-5">
             <div class="col-lg-12">
-              <div class="footer-bottom">
-                <p class="mb-0 text-white">
-                  © Copyright 2021 by Training & Consultancy.
-                </p>
-                <div>
-                  <a href="" class="text-white text-decoration-none pe-2"
-                    >Download</a
-                  >
-                  <a href="" class="text-white text-decoration-none pe-2"
-                    >Privacy</a
-                  >
-                  <a href="" class="text-white text-decoration-none pe-2"
-                    >Policy</a
-                  >
-                  <a href="" class="text-white text-decoration-none"
-                    >Terms of Use</a
-                  >
+              <div class="text-center">
+                <div
+                  class="py-5 d-flex align-items-center justify-content-center"
+                >
+                  <a href="https://www.techfocusltd.com" class="pe-lg-3">
+                    <img src="./assets/img/logo.png" width="180px" alt="" />
+                  </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="mb-0 text-white">
+                    © Copyright 2024 by Training & Consultancy.
+                  </p>
+                  <div class="ps-5">
+                    <a href="" class="text-white text-decoration-none pe-2"
+                      >Download</a
+                    >
+                    <a href="" class="text-white text-decoration-none pe-2"
+                      >Privacy</a
+                    >
+                    <a href="" class="text-white text-decoration-none pe-2"
+                      >Policy</a
+                    >
+                    <a href="" class="text-white text-decoration-none"
+                      >Terms of Use</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
