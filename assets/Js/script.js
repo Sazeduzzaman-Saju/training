@@ -152,8 +152,6 @@ $(document).ready(function () {
   });
 });
 
-
-window.addEventListener('load', function () {
-  var loader = document.querySelector('.loader-wrapper');
-  loader.style.display = 'none';
+$(window).load(function () {
+  $(".loader").fadeOut(3000);
 });

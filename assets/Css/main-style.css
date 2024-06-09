@@ -65,7 +65,9 @@ body::-webkit-scrollbar-thumb {
 .text-justify {
   text-align: justify;
 }
-
+.main-color {
+  color: var(--primary-color);
+}
 /* ==========================Main Style Start============================= */
 /* ==========================Header Style Start=========================== */
 .navbar-nav .nav-item .nav-link {
@@ -290,7 +292,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 0.8;
   outline: none;
   overflow: hidden;
-  padding: 10px !important;
+  padding: 15px !important;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -431,7 +433,7 @@ body::-webkit-scrollbar-thumb {
   padding: 30px;
 }
 .form-select {
-  background-color: #18a3af21;
+  background-color: #0a1d5b1a;
   box-shadow: none;
   outline: none;
   border: 0;
@@ -869,39 +871,15 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   z-index: 9999;
 }
-.loader-wrapper {
+.loader {
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loader-text {
-  margin-top: 20px;
-  color: white;
-}
-
-#bottomSection {
-  display: block; /* Ensure the section is visible by default */
+  z-index: 11111;
+  background: url("https://i.pinimg.com/originals/e8/28/13/e82813ff553d60346f2895ee8f2175c7.gif")
+    50% 50% no-repeat #b0d0ec;
 }
 
 .hide {
@@ -954,8 +932,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 12px;
   height: 70px;
 }
-.extra-space{
-  padding-top: 5.5rem !important;
+.extra-space {
+  padding-top: 0.5rem !important;
 }
 .border-left-side {
   border-right: 1px solid #c8c4c4;
@@ -993,6 +971,22 @@ body::-webkit-scrollbar-thumb {
     margin-top: 45px;
     font-size: 2.7em;
   }
+}
+/* Media query for screens with a maximum width of 1368 pixels */
+@media (max-width: 1368px) {
+  /* Your styles go here */
+  .slider .slick-slide {
+    border: 0;
+    z-index: 1;
+    height: 350px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+}
+  /* Add other styles as needed */
 }
 /* ==========================Project Slider Style Start============================= */
 .project-box {
@@ -1251,6 +1245,43 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/* About Us */
+.title-devider {
+  width: 50px;
+  background: var(--primary-color);
+  height: 2px;
+}
+.about-img {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.para-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.63;
+  letter-spacing: 0.3px;
+  margin-top: 34px;
+}
+.about-info-ul li {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.63;
+  letter-spacing: 0.3px;
+}
+.section-title-about {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+/* About Us End */
+/* Contact Us start */
+.contact-location-icons {
+  font-size: 80px;
+  padding: 50px 55px;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
 /* ==========================Main Style Start============================= */
 @media only screen and (max-width: 768px) {
   html,
