@@ -304,6 +304,11 @@ body::-webkit-scrollbar-thumb {
   vertical-align: top;
   white-space: nowrap;
 }
+.primary-btn-outline {
+  background-color: white;
+  padding: 15px;
+  color: black;
+}
 
 .primary-btn-one:hover {
   cursor: pointer;
@@ -985,7 +990,7 @@ body::-webkit-scrollbar-thumb {
     background-position: 50% 50%;
     display: flex;
     align-items: center;
-}
+  }
   /* Add other styles as needed */
 }
 /* ==========================Project Slider Style Start============================= */
