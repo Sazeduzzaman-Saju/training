@@ -309,7 +309,12 @@ body::-webkit-scrollbar-thumb {
   padding: 15px;
   color: black;
 }
-
+.why-chose-title{
+  font-size: 23px;
+}
+.overlay-color {
+  background-color: rgb(32 54 83 / 86%); /* Adjust the color and opacity as needed */
+}
 .primary-btn-one:hover {
   cursor: pointer;
   background-color: var(--secondary-color);
